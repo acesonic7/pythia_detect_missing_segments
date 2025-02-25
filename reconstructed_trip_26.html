@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1b3ec62227b9a31511e04555d11f4e0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <h3 align="center">Trip 26 - Walking with Reconstructed Beginning</h3>
+            <p align="center">
+                From 2024-12-16 16:34 to 16:40
+                <br>Duration: 6.7 min, Distance: 0.59 km
+                <br><span style="color:orange;">▪▪▪▪▪</span> Reconstructed Segment &nbsp; 
+                <span style="color:green;">▪▪▪▪▪</span> Original Segment
+            </p>
+        
+    
+            <div class="folium-map" id="map_f1b3ec62227b9a31511e04555d11f4e0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1b3ec62227b9a31511e04555d11f4e0 = L.map(
+                "map_f1b3ec62227b9a31511e04555d11f4e0",
+                {
+                    center: [37.9897847469695, 23.736603858468715],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_81cff5cb0f9fd15b5f3ddb67d4268e3b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_81cff5cb0f9fd15b5f3ddb67d4268e3b.addTo(map_f1b3ec62227b9a31511e04555d11f4e0);
+        
+    
+            var poly_line_058f153c25bd4aad73ce5e301222d00d = L.polyline(
+                [[37.990439552497676, 23.73877801344515], [37.99038959637245, 23.738601177117424], [37.99033964024723, 23.7384243407897], [37.990289684122004, 23.738247504461977], [37.99023972799677, 23.738070668134252], [37.99018977187155, 23.737893831806527], [37.990139815746325, 23.737716995478802], [37.9900898596211, 23.73754015915108], [37.99003990349588, 23.737363322823356], [37.98998994737065, 23.73718648649563], [37.98993999124542, 23.737009650167906], [37.9898900351202, 23.736832813840184], [37.98984007899497, 23.73665597751246], [37.98979012286975, 23.736479141184734]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_f1b3ec62227b9a31511e04555d11f4e0);
+        
+    
+        var popup_e0ffb69581713997c843ac99d8295e4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_761e21dc9bb0385400682a6dff706e34 = $(`<div id="html_761e21dc9bb0385400682a6dff706e34" style="width: 100.0%; height: 100.0%;">Reconstructed segment (14 points)</div>`)[0];
+                popup_e0ffb69581713997c843ac99d8295e4f.setContent(html_761e21dc9bb0385400682a6dff706e34);
+            
+        
+
+        poly_line_058f153c25bd4aad73ce5e301222d00d.bindPopup(popup_e0ffb69581713997c843ac99d8295e4f)
+        ;
+
+        
+    
+    
+            var marker_a285e08e2324d7c6b66287bff3297e7b = L.marker(
+                [37.990439552497676, 23.73877801344515],
+                {
+}
+            ).addTo(map_f1b3ec62227b9a31511e04555d11f4e0);
+        
+    
+            var icon_cf47bbf773b35091922442939f66132c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a285e08e2324d7c6b66287bff3297e7b.setIcon(icon_cf47bbf773b35091922442939f66132c);
+        
+    
+        var popup_a386e71a034dc49818ec8ae79ca8fac1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20ef39cf9627dee89363a28cf740a1f6 = $(`<div id="html_20ef39cf9627dee89363a28cf740a1f6" style="width: 100.0%; height: 100.0%;">Reconstructed Start: 16:34:14</div>`)[0];
+                popup_a386e71a034dc49818ec8ae79ca8fac1.setContent(html_20ef39cf9627dee89363a28cf740a1f6);
+            
+        
+
+        marker_a285e08e2324d7c6b66287bff3297e7b.bindPopup(popup_a386e71a034dc49818ec8ae79ca8fac1)
+        ;
+
+        
+    
+    
+            var poly_line_db640123792ac1ff50120fbd8d097f69 = L.polyline(
+                [[37.98979012286975, 23.736479141184734], [37.98979012286975, 23.736479141184734], [37.98979012286975, 23.736479141184734], [37.98985465206845, 23.73643801408646], [37.98985465206845, 23.73643801408646], [37.98983679959344, 23.736322415224453], [37.98979801384722, 23.73619827324001], [37.98980417288929, 23.73606145644763], [37.98980576195157, 23.73593310903032], [37.989768856210794, 23.735812174176218], [37.98971705821515, 23.73571755013162], [37.989604163074176, 23.735671972960024], [37.9895094568385, 23.73565120828655], [37.98942019411648, 23.735624923563265], [37.98932009380688, 23.73564731936893], [37.98922948997095, 23.73564771086293], [37.98915920308234, 23.735576398211418], [37.98915920308234, 23.735576398211418], [37.98915920308234, 23.735576398211418], [37.9892290511339, 23.735447003897953], [37.989258022719035, 23.7355572004447]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_f1b3ec62227b9a31511e04555d11f4e0);
+        
+    
+        var popup_9c79e47e0c5754ccd47dcacc31d8d905 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1683b853d3ad9bec9a766736760ade75 = $(`<div id="html_1683b853d3ad9bec9a766736760ade75" style="width: 100.0%; height: 100.0%;">Original walking segment (21 points)</div>`)[0];
+                popup_9c79e47e0c5754ccd47dcacc31d8d905.setContent(html_1683b853d3ad9bec9a766736760ade75);
+            
+        
+
+        poly_line_db640123792ac1ff50120fbd8d097f69.bindPopup(popup_9c79e47e0c5754ccd47dcacc31d8d905)
+        ;
+
+        
+    
+    
+            var marker_083b855a098fc928b71e3acaba435db9 = L.marker(
+                [37.98979012286975, 23.736479141184734],
+                {
+}
+            ).addTo(map_f1b3ec62227b9a31511e04555d11f4e0);
+        
+    
+            var icon_dee871032a4b6099de616e670d592817 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_083b855a098fc928b71e3acaba435db9.setIcon(icon_dee871032a4b6099de616e670d592817);
+        
+    
+        var popup_c7f80eea06d7ac99c744321ca2b93f90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0595e953fdff6df957bfe921f37a7d1a = $(`<div id="html_0595e953fdff6df957bfe921f37a7d1a" style="width: 100.0%; height: 100.0%;">Original First Point: 16:37:47</div>`)[0];
+                popup_c7f80eea06d7ac99c744321ca2b93f90.setContent(html_0595e953fdff6df957bfe921f37a7d1a);
+            
+        
+
+        marker_083b855a098fc928b71e3acaba435db9.bindPopup(popup_c7f80eea06d7ac99c744321ca2b93f90)
+        ;
+
+        
+    
+    
+            var marker_e6585fa21d97b36f2d2c764226042cb6 = L.marker(
+                [37.989258022719035, 23.7355572004447],
+                {
+}
+            ).addTo(map_f1b3ec62227b9a31511e04555d11f4e0);
+        
+    
+            var icon_92548a7c1d877399a93acc684511bedc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e6585fa21d97b36f2d2c764226042cb6.setIcon(icon_92548a7c1d877399a93acc684511bedc);
+        
+    
+        var popup_d45976c5c1857ff8a0ad7116e21737bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8adea8280e979ff341658cea98e47eb3 = $(`<div id="html_8adea8280e979ff341658cea98e47eb3" style="width: 100.0%; height: 100.0%;">End: 16:40:56</div>`)[0];
+                popup_d45976c5c1857ff8a0ad7116e21737bc.setContent(html_8adea8280e979ff341658cea98e47eb3);
+            
+        
+
+        marker_e6585fa21d97b36f2d2c764226042cb6.bindPopup(popup_d45976c5c1857ff8a0ad7116e21737bc)
+        ;
+
+        
+    
+</script>
+</html>
