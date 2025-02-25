@@ -34,7 +34,7 @@ This algorithm uses multiple detection strategies and reconstruction techniques:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/trip-reconstruction.git
+git clone https://github.com/acesonic7/pythia_detect_missing_segments.git
 cd trip-reconstruction
 
 # Install dependencies
